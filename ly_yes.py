@@ -1,9 +1,9 @@
 #to run use python3 
 def open_st():
     while True:
-        x = input("Enter a year in the form of an integer, or type exit to exit: ")
+        x = input("Enter a year in the form of an integer, or type 'exit' to exit: ")
         if x == "exit":
-            return
+            exit()
         try:
             y = int(x)
             check(y)
