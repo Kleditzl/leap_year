@@ -1,4 +1,4 @@
-#To run, just use python3
+#to run use python3 
 def open_st():
     x = input("Enter a year in the form of an integer: ")
     x = int(x)
