@@ -1,8 +1,15 @@
 #to run use python3 
 def open_st():
-    x = input("Enter a year in the form of an integer: ")
-    x = int(x)
-    check(x)
+    while True:
+        x = input("Enter a year in the form of an integer, or type exit to exit: ")
+        if x == "exit":
+            return
+        try:
+            y = int(x)
+            check(y)
+        except ValueError:
+            print("That is not an integer, try again")
+            open_st()
 
 def check(x):
     a = 0
